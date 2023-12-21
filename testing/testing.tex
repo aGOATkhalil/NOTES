@@ -1,12 +1,28 @@
 \documentclass{article}
 \usepackage{graphicx} % Required for inserting images
 
+\renewcommand{\today}{\ifcase \month \or January\or February\or March\or%
+April\or May \or June\or July\or August\or September\or October\or November\or %
+December\fi, \number \year} 
+
+\makeatletter
+\renewcommand{\@maketitle}{
+   \raggedright\begin{flushleft}
+      \Large\bfseries\@title\par
+      \medskip
+      \normalsize \@author\par
+      \medskip % Adds some space between author and date
+      \normalsize \@date\par
+   \end{flushleft}
+}
+\makeatother
+
+
 \title{Testing}
 \author{Khalil Gatto}
-\date{December 2023}
+\date{\today}
 
 \begin{document}
-
 \maketitle
 
 \section{Introduction}
