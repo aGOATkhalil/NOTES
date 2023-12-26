@@ -1,5 +1,7 @@
 \documentclass{article}
 \usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath}
+
 
 \renewcommand{\today}{\ifcase \month \or January\or February\or March\or%
 April\or May \or June\or July\or August\or September\or October\or November\or %
@@ -25,6 +27,35 @@ December\fi, \number \year}
 \begin{document}
 \maketitle
 
-\section{Introduction}
+\begin{abstract}
+    This document covers Calculus, Linear Algebra, Math Analysis and Differential Equations.
+\end{abstract}
+
+\section*{Calculus 3}
+This section largely follows Chapters 12-16 in Calculus Early Transcendentals.
+
+\subsection*{Chapter 12: Vectors and Geometry of Space}
+
+\paragraph{Distance Formula in 3D}
+\begin{equation} 
+    \label{eq:Distance Formula in 3D}
+    |P_1P_2| = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2 + (z_2 - z_1)^2} 
+\end{equation}
+
+\paragraph{Equation of a Sphere}
+\begin{equation}
+    \label{eq:Equation of a Sphere}
+    (x - h)^2 + (y-k)^2 + (z-l)^2 = r^2
+\end{equation}
+r: Radius of phere
+\newline
+C(h,k,l): Center of sphere
+
+\paragraph{Unit Vectors}\mbox{}\\ %the mbox command is a cheat to force a newline in paragraph
+Suppose that \(\vec{a} \neq 0\) and that \(\vec{u}\) has the same direction of \(\vec{a}\) :
+\begin{equation}
+    \label{eq:Unit Vector}
+    u = \frac{1}{|a|} a = \frac{a}{|a|}
+\end{equation}
 
 \end{document}
