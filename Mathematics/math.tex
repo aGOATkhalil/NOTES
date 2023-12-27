@@ -1,27 +1,19 @@
 \documentclass{article}
 \usepackage{graphicx} % Required for inserting images
-\usepackage{amsmath}
+\usepackage{amsmath} % for math environments and more
+\usepackage{amssymb} % for extended symbol collection
+\usepackage{setspace}
+\usepackage{tikz}
+\usetikzlibrary{angles,quotes} % for the angle labeling
 
 
 \renewcommand{\today}{\ifcase \month \or January\or February\or March\or%
 April\or May \or June\or July\or August\or September\or October\or November\or %
 December\fi, \number \year} 
 
-% \makeatletter
-% \renewcommand{\@maketitle}{
-%    \raggedright\begin{flushleft}
-%       \Large\bfseries\@title\par
-%       \medskip
-%       \normalsize \@author\par
-%       \medskip % Adds some space between author and date
-%       \normalsize \@date\par
-%    \end{flushleft}
-% }
-% \makeatother
-
 
 \title{Mathematics\\A Reference Manual}
-\author{Khalil Gatto}
+\author{Written by Khalil Gatto}
 \date{\today}
 
 \begin{document}
@@ -42,14 +34,14 @@ This section largely follows Chapters 12-16 in Calculus Early Transcendentals.
     |P_1P_2| = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2 + (z_2 - z_1)^2} 
 \end{equation}
 
-\paragraph{Equation of a Sphere}
+\paragraph{Equation of a Sphere}\mbox{}\\
+r: Radius of phere
+\newline
+C(h,k,l): Center of sphere
 \begin{equation}
     \label{eq:Equation of a Sphere}
     (x - h)^2 + (y-k)^2 + (z-l)^2 = r^2
 \end{equation}
-r: Radius of phere
-\newline
-C(h,k,l): Center of sphere
 
 \paragraph{Unit Vectors}\mbox{}\\ %the mbox command is a cheat to force a newline in paragraph
 Suppose that \(\vec{a} \neq 0\) and that \(\vec{u}\) has the same direction of \(\vec{a}\) :
@@ -57,5 +49,112 @@ Suppose that \(\vec{a} \neq 0\) and that \(\vec{u}\) has the same direction of \
     \label{eq:Unit Vector}
     u = \frac{1}{|a|} a = \frac{a}{|a|}
 \end{equation}
+
+\paragraph{Dot Products}\mbox{}\\
+\begin{equation}
+    \label{eq:Dot Product}
+    a \cdot b = a_1b_1 + a_2b_2 +...a_nb_n
+\end{equation}
+Properties include:\newline
+1. Output is a scalar.\hspace{1cm}2. \(a \cdot a = |a|^2\)\hspace{1cm}
+3. \(a \cdot b = b \cdot a\)\hspace{1cm}\newline
+4. \(a \cdot (b+c) = a \cdot b + a \cdot c\)\hspace{1cm}5. \(ca \cdot b = c(b \cdot a) = a \cdot (cb)\)
+\newline\newline
+Theorem: If \(\theta\) is the angle between two vectors, then\newline
+\begin{equation}
+    \label{eq: Theta between two vectors}
+    a \cdot b = |a||b|\cos{\theta}
+\end{equation}
+\begin{equation}
+    \label{eq: Theta dot product 2}
+    \cos{\theta} = \frac{a \cdot b}{|a||b|} 
+\end{equation}
+\newline
+Two vectors are orthogonal if \(a \cdot b = 0\)\newline
+
+\paragraph{Projections}\mbox{}\\
+Scalar projection of \(\vec{b}\) onto \(\vec{a}\)... aka component of b along a: 
+\begin{equation}
+    \label{eq: scalar projection}
+    \text{comp}_{\vec{a}}{\vec{b}} = \frac{a \cdot b}{|a|}
+\end{equation}
+\newline
+Vector projection of \(\vec{b}\) onto \(\vec{a}\): 
+\begin{equation}
+    \label{eq: vector projection}
+    \text{proj}_{\vec{a}}{\vec{b}} = \left(\frac{a \cdot b}{|a|}\right) \frac{a}{|a|} 
+    = \left(\frac{a \cdot b}{|a|^2}\right) a
+\end{equation}
+
+\paragraph{Associated Inequalities and Identities}\mbox{}\\
+\begin{onehalfspace}
+Cauchy-Schwartz Inequality:\hspace{1cm}\(|a \cdot b| \leq |a||b|\)\\
+Triangle Inequality: \hspace{1cm}\((a + b) \leq |a| + |b|\)\\
+Parallelogram Identity: \hspace{1cm} \(|a+b|^2 + |a-b|^2 = 2|a|^2 +  2|b|^2\)
+\end{onehalfspace}
+
+\paragraph{Cross Product}\mbox{}\\
+Suppose \(a = \langle a_1, a_2, a_3 \rangle\) and \(b = \langle b_1, b_2, b_3 \rangle\) 
+or \( \vec{a} = \begin{bmatrix} a_1 \\ a_2 \\ a_3 \end{bmatrix} \) and \( \vec{b} = \begin{bmatrix} b_1 \\ b_2 \\ b_3 \end{bmatrix} \)
+then\\
+\begin{equation}
+    \label{corss product}
+    a \times b = \langle a_2b_3 - a_3b_2, a_3b_1 - a_1b_3, a_1b_2 - a_2b_1 \rangle
+\end{equation}\\
+Which really comes from the following. Instead do this:\\
+\[ 
+\vec{a} \times \vec{b} = 
+\begin{vmatrix}
+\mathbf{i} & \mathbf{j} & \mathbf{k} \\
+a_1 & a_2 & a_3 \\
+b_1 & b_2 & b_3
+\end{vmatrix} 
+\]
+Expanding this determinant, we get:
+\[ 
+\vec{a} \times \vec{b} = \mathbf{i}
+\begin{vmatrix}
+a_2 & a_3 \\
+b_2 & b_3 
+\end{vmatrix}
+- \mathbf{j}
+\begin{vmatrix}
+a_1 & a_3 \\
+b_1 & b_3
+\end{vmatrix}
++ \mathbf{k}
+\begin{vmatrix}
+a_1 & a_2 \\
+b_1 & b_2
+\end{vmatrix}
+\]
+\\\\\\
+Properties:
+\begin{enumerate}
+    \item The resultant vector is orthogonal to both a and b.
+    \item \(a \times b = |a||b|\sin{\theta}\)
+    \item vectors a and b are parallel if \(a \times b = 0\)
+    \item \( \mathbf{a} \times \mathbf{b} = -\mathbf{b} \times \mathbf{a} \)
+    \item \( (c\mathbf{a}) \times \mathbf{b} = c(\mathbf{a} \times \mathbf{b}) = \mathbf{a} \times (c\mathbf{b}) \)
+    \item \( \mathbf{a} \times (\mathbf{b} + \mathbf{c}) = \mathbf{a} \times \mathbf{b} + \mathbf{a} \times \mathbf{c} \)
+    \item \( (\mathbf{a} + \mathbf{b}) \times \mathbf{c} = \mathbf{a} \times \mathbf{c} + \mathbf{b} \times \mathbf{c} \)
+    \item \( \mathbf{a} \cdot (\mathbf{b} \times \mathbf{c}) = (\mathbf{a} \times \mathbf{b}) \cdot \mathbf{c} \)
+    \item \( \mathbf{a} \times (\mathbf{b} \times \mathbf{c}) = (\mathbf{a} \cdot \mathbf{c})\mathbf{b} - (\mathbf{a} \cdot \mathbf{b})\mathbf{c} \)
+\end{enumerate}
+
+\paragraph{Triple Product}\mbox{}\\
+\begin{equation}
+    \label{triple product}
+    a \cdot (b \times c) = 
+    \begin{vmatrix}
+        a_1 & a_2 & a_3\\
+        b_1 & b_2 & b_3\\
+        c_1 & c_2 & c_3
+    \end{vmatrix}
+\end{equation}\\
+Volume of a parallelepiped: \(V = |a \cdot (b \times c)|\)\\
+
+\paragraph{Equations of Lines and Planes}\mbox{}\\
+
 
 \end{document}
