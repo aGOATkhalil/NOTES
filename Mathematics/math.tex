@@ -87,11 +87,11 @@ Vector projection of \(\vec{b}\) onto \(\vec{a}\):
 \end{equation}
 
 \paragraph{Associated Inequalities and Identities}\mbox{}\\
-\begin{onehalfspace}
+\begin{doublespace}
 Cauchy-Schwartz Inequality:\hspace{1cm}\(|a \cdot b| \leq |a||b|\)\\
 Triangle Inequality: \hspace{1cm}\((a + b) \leq |a| + |b|\)\\
 Parallelogram Identity: \hspace{1cm} \(|a+b|^2 + |a-b|^2 = 2|a|^2 +  2|b|^2\)
-\end{onehalfspace}
+\end{doublespace}
 
 \paragraph{Cross Product}\mbox{}\\
 Suppose \(a = \langle a_1, a_2, a_3 \rangle\) and \(b = \langle b_1, b_2, b_3 \rangle\) 
@@ -153,8 +153,57 @@ Properties:
     \end{vmatrix}
 \end{equation}\\
 Volume of a parallelepiped: \(V = |a \cdot (b \times c)|\)\\
+*Insert image here*\\
 
 \paragraph{Equations of Lines and Planes}\mbox{}\\
+\begin{doublespace}
+    \(\vec{v} = \langle a,b,c \rangle\)\hspace{1cm}
+    \(\vec{r} = \langle x,y,z \rangle\)\hspace{1cm}
+    \(\vec{r_0} = \langle x_0,y_0,z_0 \rangle\)\\
+    \(\langle x,y,z \rangle = \langle x_0 + ta, y_0 + tb, z_0 + tc \rangle\)\\
+    \(x = x_0 + at\)\hspace{1cm}\(y = y_0 + at\)\hspace{1cm}\(z = z_0 + at\)\\
+    Suppose that \(\vec{a}\) and \(\vec{v}\) are parallel vectors, and t is a scalar. Then:
+\end{doublespace}
+
+\begin{equation}
+    \label{some identity}
+    \vec{a} = t\vec{v}
+\end{equation}
+\begin{equation}
+    \label{vector equation of L}
+    \vec{r} = r_0 + t\vec{v}
+\end{equation}\\
+Which also means:
+\begin{equation}
+    \label{parametric equavalents}
+    \frac{x - x_0}{a} = \frac{y - y_0}{b} = \frac{z - z_0}{c}
+\end{equation}\\
+
+Line segment from \(\vec{r_0}\) to \(\vec{r_1}\) :\\
+\begin{equation}
+    \mathbf{r}(t) = (1-t)\mathbf{r_0} + t\mathbf{r_1} \hspace{1cm} 0 \leq t \leq 1
+\end{equation}\\
+
+Let \(\mathbf{n}\) be a vector orthogonal (normal ie. 90 deg) to a plane P, then:\\
+\begin{equation}
+    \mathbf{n} \cdot (\mathbf{r - r_0}) = 0
+\end{equation}\\
+\begin{equation}
+    \mathbf{n} \cdot \mathbf{r} = \mathbf{n} \cdot \mathbf{r_0}
+\end{equation}\\
+
+Scalar equation of the plane through point \(P_0(x_0, y_0, z_0)\) with \(\mathbf{n}\) :\\
+\begin{equation}
+    a(x-x_0) + b(y-y_0) + c(z-z_0) = 0
+\end{equation}\\
+
+Two planes are parallel if their normal vectors are parallel.\\
+
+\paragraph{Cylinders and Quadric Surfaces}\mbox{}\\
+*Insert images of surfaces here*\\
+
+
+\subsection*{Chapter 13: Vector Functions}
 
 
 \end{document}
