@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1703721484 "c:/Users/Khalil Gatto/Desktop/SCHOOL/NOTES/Mathematics/math.tex" "math.pdf" "math" 1703721485 0
+["pdflatex"] 1703722613 "c:/Users/Khalil Gatto/Desktop/SCHOOL/NOTES/Mathematics/math.tex" "math.pdf" "math" 1703722613 0
   "C:/Users/Khalil" 1688341319 19029 3e928c39d914513478c8ff005f3b3f9f ""
   "C:/Users/Khalil Gatto/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1703640297 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/Khalil Gatto/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1703187509 24227371 ac1a3aec6459b54b9048d9ca467c915e ""
@@ -130,10 +130,11 @@
   "C:/Users/Khalil Gatto/AppData/Local/Programs/MiKTeX/tex/latex/pgf/utilities/pgfrcs.sty" 1673775190 325 f9f16d12354225b7dd52a3321f085955 ""
   "C:/Users/Khalil Gatto/AppData/Local/Programs/MiKTeX/tex/latex/setspace/setspace.sty" 1670403145 22490 8cac309b79a4c53a4ffce4b1b07aead0 ""
   "C:/Users/Khalil Gatto/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
+  "C:/Users/Khalil Gatto/Desktop/Pictures/table_of_surfaces.png" 1703721933 159007 b75a5af382193151d442f735e24b1da5 ""
   "c:/Users/Khalil" 1688341319 19029 3e928c39d914513478c8ff005f3b3f9f ""
-  "c:/Users/Khalil Gatto/Desktop/SCHOOL/NOTES/Mathematics/math.tex" 1703721483 7064 c4ac4f39666dc9925047620dc0a533d3 ""
-  "math.aux" 1703721484 1577 a6f2c17ce5d5d3d5ea3bd20576066076 "pdflatex"
-  "math.tex" 1703721483 7064 c4ac4f39666dc9925047620dc0a533d3 ""
+  "c:/Users/Khalil Gatto/Desktop/SCHOOL/NOTES/Mathematics/math.tex" 1703722612 7236 08decee8ec616bb072e2d1af01fed133 ""
+  "math.aux" 1703722613 1577 26149b307d7f4bf366767d2fd1b70d2c "pdflatex"
+  "math.tex" 1703722612 7236 08decee8ec616bb072e2d1af01fed133 ""
   (generated)
   "math.aux"
   "math.log"
