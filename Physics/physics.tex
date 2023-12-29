@@ -50,6 +50,51 @@ The electric field \( E \) at a point in space is defined as the electric force 
 \textbf{Explanation:} 
 Ohm's Law relates the voltage across a conductor \( V \), the current flowing through it \( I \), and its resistance \( R \). It states that the current is directly proportional to the voltage and inversely proportional to the resistance.
 
+\subsection*{Gauss' Law and Symmetry}
+Gauss' Law is a fundamental principle that relates the distribution of electric charge to the resulting electric field. The law is expressed as:
+\begin{equation}
+    \oint \vec{E} \cdot d\vec{A} = \frac{q_{\text{enc}}}{\varepsilon_0}
+\end{equation}
+where the total electric flux $\Phi_E$ through a closed surface is equal to the charge $q_{\text{enc}}$ enclosed by the surface divided by the vacuum permittivity $\varepsilon_0$.
+
+\subsection*{Example: Spherical Symmetry}
+For a point charge, the electric field is radially outward and the Gaussian surface is a sphere:
+\begin{equation}
+    E(4\pi r^2) = \frac{q}{\varepsilon_0} \quad \implies \quad E = \frac{q}{4\pi \varepsilon_0 r^2}
+\end{equation}
+where $r$ is the radius of the Gaussian sphere and $q$ is the enclosed charge.
+
+\subsection*{Charges on Conductors}
+For a conductor in electrostatic equilibrium, the charge resides on the surface, the electric field inside is zero, and on the surface, it's perpendicular to the surface.
+
+\subsection*{Induced Charges on Conductors}
+When a conductor is placed in an external electric field, charges within the conductor redistribute until the field inside is zero, creating induced charges on the surface.
+
+\subsection*{Induced Charges on Conductors}
+When a conductor is placed in an external electric field, charges within the conductor redistribute until the field inside is zero, creating induced charges on the surface.
+
+\subsection*{Example: Solid Infinite Cylindrical Conductor}
+For a long cylindrical conductor with charge per unit length $\lambda$, Gauss' Law can be applied with a cylindrical Gaussian surface:
+\begin{equation}
+    E(2\pi rL) = \frac{\lambda L}{\varepsilon_0} \quad \implies \quad E = \frac{\lambda}{2\pi\varepsilon_0 r}
+\end{equation}
+where $L$ is the length of the cylinder and $r$ is the radial distance from the axis.
+
+\subsection*{Infinite Sheet of Charge}
+For an infinite sheet of charge with surface charge density $\sigma$, the electric field is:
+\begin{equation}
+    E = \frac{\sigma}{2\varepsilon_0}
+\end{equation}
+directed perpendicularly away from the sheet.
+
+\subsection*{Superposition}
+The principle of superposition states that the total electric field created by multiple charges is the vector sum of the electric fields created by each charge individually:
+\begin{equation}
+    \vec{E}_{\text{total}} = \sum_{i=1}^{n} \vec{E}_i
+\end{equation}
+where $\vec{E}_i$ is the electric field due to the $i$th charge.
+
+
 \subsection*{Faraday's Law of Electromagnetic Induction}
 \textbf{Equation:} 
 \[ \mathcal{E} = -\frac{d\Phi_B}{dt} \]
