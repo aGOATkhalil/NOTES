@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1703722613 "c:/Users/Khalil Gatto/Desktop/SCHOOL/NOTES/Mathematics/math.tex" "math.pdf" "math" 1703722613 0
+["pdflatex"] 1703812177 "c:/Users/Khalil Gatto/Desktop/SCHOOL/NOTES/Mathematics/math.tex" "math.pdf" "math" 1703812178 0
   "C:/Users/Khalil" 1688341319 19029 3e928c39d914513478c8ff005f3b3f9f ""
   "C:/Users/Khalil Gatto/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1703640297 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/Khalil Gatto/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1703187509 24227371 ac1a3aec6459b54b9048d9ca467c915e ""
@@ -41,6 +41,7 @@
   "C:/Users/Khalil Gatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1247596667 32762 7fee39e011c23b3589931effd97b9702 ""
   "C:/Users/Khalil Gatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb" 1247596666 33993 9b89b85fd2d9df0482bd47194d1d3bf3 ""
   "C:/Users/Khalil Gatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247596667 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "C:/Users/Khalil Gatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1247596666 32716 08e384dc442464e7285e891af9f45947 ""
   "C:/Users/Khalil Gatto/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.mkii" 1580390158 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "C:/Users/Khalil Gatto/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcore.code.tex" 1673775190 1016 1c2b89187d12a2768764b83b4945667c ""
   "C:/Users/Khalil Gatto/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex" 1673775190 43820 1fef971b75380574ab35a0d37fd92608 ""
@@ -132,9 +133,9 @@
   "C:/Users/Khalil Gatto/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
   "C:/Users/Khalil Gatto/Desktop/Pictures/table_of_surfaces.png" 1703721933 159007 b75a5af382193151d442f735e24b1da5 ""
   "c:/Users/Khalil" 1688341319 19029 3e928c39d914513478c8ff005f3b3f9f ""
-  "c:/Users/Khalil Gatto/Desktop/SCHOOL/NOTES/Mathematics/math.tex" 1703722612 7236 08decee8ec616bb072e2d1af01fed133 ""
-  "math.aux" 1703722613 1577 26149b307d7f4bf366767d2fd1b70d2c "pdflatex"
-  "math.tex" 1703722612 7236 08decee8ec616bb072e2d1af01fed133 ""
+  "c:/Users/Khalil Gatto/Desktop/SCHOOL/NOTES/Mathematics/math.tex" 1703812177 7788 a28a7fc96f92e5e052370f569502daa5 ""
+  "math.aux" 1703812178 1749 af1c38809a875d539ed33412ff36d550 "pdflatex"
+  "math.tex" 1703812177 7788 a28a7fc96f92e5e052370f569502daa5 ""
   (generated)
   "math.aux"
   "math.log"
